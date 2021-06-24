@@ -139,3 +139,6 @@ if __name__ == "__main__":
     tweet_df = tweet.get_tweet_df() 
 
     # use all defined functions to generate a dataframe with the specified columns above
+    
+tweet_data_df = tweet_df[columns].apply(TweetDfExtractor)
+tweet_data_df.head()
