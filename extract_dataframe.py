@@ -155,5 +155,5 @@ if __name__ == "__main__":
 
     # use all defined functions to generate a dataframe with the specified columns above
     
-tweet_data_df = tweet_df[columns].apply(TweetDfExtractor)
-tweet_data_df.head()
+#tweet_data_df = tweet_df[columns].apply(TweetDfExtractor)
+#tweet_data_df.head()
