@@ -41,49 +41,48 @@ class TweetDfExtractor:
     
     def find_full_text(self)->list:
         text=[]
-        for i in (self.tweets_list):    
+        for i in range(len(self.tweets_list)):    
           text.append(i)
         return text
           
 
     def find_sentiments(self, text)->list:
         polarity,subjectivity=([] for x in range(2))
-        for i in (self.tweets_list):  
+        for i in (self.tweets_list):
           polarity=TextBlob(i).sentiment.polarity
           subjectivity=TextBlob(i).sentiment.subjectivity     
         return polarity, subjectivity
 
     def find_created_time(self)->list:
         created_at=[]
-        for i in (self.tweets_list):    
+        for i in range(len(self.tweets_list)):    
           created_at.append([i])
         return created_at
           
         
     def find_source(self)->list:
         source=[]
-        for i in (self.tweets_list):    
-          source.append(i)
+        for i in range(len(self.tweets_list)):    
+          source.append([i])
         return source
 
-          
-        
+           
     
     def find_screen_name(self)->list:
         screen_name=[]
-        for i in (self.tweets_list):    
+        for i in range(len(self.tweets_list)):   
           screen_name.append(i)
         return screen_name
 
     def find_followers_count(self)->list:
         followers_count=[]
-        for i in (self.tweets_list):    
+        for i in range(len(self.tweets_list)):  
           followers_count.append(i)
         return followers_count
 
     def find_friends_count(self)->list:
         friends_count=[]
-        for i in (self.tweets_list):    
+        for i in range(len(self.tweets_list)):
           friends_count.append(i)
         return friends_count
 
@@ -91,7 +90,7 @@ class TweetDfExtractor:
 
     def is_sensitive(self)->list:
         is_sensitive=[]
-        for x in self.tweets_list:
+        for x in range(len(self.tweets_list)):
           is_sensitive.append(x)
      
 
@@ -99,7 +98,7 @@ class TweetDfExtractor:
 
     def find_favourite_count(self)->list:
         favourite_count=[]
-        for i in (self.tweets_list):
+        for i in range(len(self.tweets_list)):
             favourite_count.append(i)
         return favourite_count
       
@@ -107,20 +106,20 @@ class TweetDfExtractor:
     
     def find_retweet_count(self)->list:
         retweet_count=[]
-        for i in (self.tweets_list):    
+        for i in range(len(self.tweets_list)):
           retweet_count.append(i)
         return retweet_count
 
     def find_hashtags(self)->list:
         hashtags=[]
-        for i in (self.tweets_list):    
+        for i in range(len(self.tweets_list)):
           hashtags.append(i)
         return hashtags
         
 
     def find_mentions(self)->list:
         mentions=[]
-        for i in (self.tweets_list):    
+        for i in range(len(self.tweets_list)):  
           mentions.append(i)
         return mentions
 
@@ -135,7 +134,7 @@ class TweetDfExtractor:
 
     def find_lang(self)->list:
         lang=[]
-        for i in self.tweets_list:
+        for i in range(len(self.tweets_list)):
           lang.append(i)
         return lang
 
