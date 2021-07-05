@@ -18,7 +18,7 @@ def server_connection(host_name, user_name, user_password):
         connection = mysql.connector.connect(
             host="localhost",
             user="root",
-            passwd="doro19997"
+            passwd=" "
         )
         print("MySQL Database connection successful")
     except Error as err:
